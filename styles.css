@@ -1,0 +1,23 @@
+body{
+margin: 0;
+}
+header{
+border: 1px solid red;
+display: flex;
+}
+.titulo{
+    width: 50%;
+    border: 1px solid red;
+
+}
+.opcines{
+    width: 50%;
+}
+ul{
+    border: 1px solid red;
+    display: flex;
+}
+li{
+
+margin: 0 10vh 0 30px;
+}
