@@ -2,22 +2,36 @@ body{
 margin: 0;
 }
 header{
-border: 1px solid red;
+border: 1px solid yellow;
 display: flex;
+background-color: cadetblue;
+color: beige;
 }
 .titulo{
     width: 50%;
-    border: 1px solid red;
+margin: 0 0 0 10px;
+}
+.opciones{
+    width: 50%;
+border-left: 3px solid black;
 
 }
-.opcines{
-    width: 50%;
-}
 ul{
-    border: 1px solid red;
     display: flex;
 }
 li{
 
-margin: 0 10vh 0 30px;
+margin: 15px 40px 0 40px;
+}
+
+form{
+background-color: navajowhite;
+padding: 100px 100px 100px 50px ;
+color: azure;
+margin: 10px 30% 0 30%;
+border: 1px solid skyblue;
+}
+.rt{
+margin: 0 15% 0 15%; 
+
 }
