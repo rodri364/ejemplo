@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 80vh;
+  background-color: aquamarine;
+}
+  
+header{
+  background-color: #333;
   color: white;
+  padding: 10px 0;
+}
+  
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  
+.titulo h1{
+  margin: 0;
+}
+  
+/*
+.opciones{
+      width: 50%;
+  border-left: 3px solid black;
+}*/
+
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+nav li{
+  margin: 0 20px;
+}
+  
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+  
+nav a:hover{
+  background-color: #575757;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-container{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  max-width: 400px;
+  width: 100%;
 }
+.login-form h2{
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+.login-form label{
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+.login-form input{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+  .login-form button{
+      width: 100px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  .login-form button:hover{
+      background-color: #0056b3;
+  }
