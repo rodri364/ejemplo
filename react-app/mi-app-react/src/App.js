@@ -24,9 +24,9 @@ function App(props) {
                 <form class="login-form">
                     <h2>Iniciar sesion</h2>
                     <label for="email">Correo electronico</label>
-                    <input type="email" id="email" name="email" required />
+                    <input type="email" id="email" name="email" alt="Correo electronico" placeholder="Ingrese su correo electronico" required />
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" required />
+                    <input type="password" id="password" name="password" alt="Contraseña" placeholder="Ingrese su contraseña" required />
                     <button type="submit">Ingresar</button>
                 </form>
             </div>
