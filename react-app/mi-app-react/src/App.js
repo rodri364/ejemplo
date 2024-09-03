@@ -17,17 +17,21 @@ function App(props) {
             <li><a href="#">5</a></li>
         </ul>
         </nav>
+
+        <div class="boton1"><p><a class="a" href="index.html">Iniciar sesion</a></p></div>
+        <div class="boton2"><p><a class="a" href="registro.html">Registrarse</a></p></div>
         </div>
     </header>
         <main>
             <div class="login-container">
                 <form class="login-form">
                     <h2>Iniciar sesion</h2>
-                    <label for="email">Correo electronico</label>
-                    <input type="email" id="email" name="email" alt="Correo electronico" placeholder="Ingrese su correo electronico" required />
+                    <label for="username">Nombre de usuario</label>
+                    <input type="username" id="username" name="username" alt="Nombre de usuario" placeholder="Ingrese su nombre de usuario" required />
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" alt="Contraseña" placeholder="Ingrese su contraseña" required />
                     <button type="submit">Ingresar</button>
+                    <h5>Si no tiene una cuenta ingrese <a href="registro.html">aqui</a></h5>
                 </form>
             </div>
         </main>
