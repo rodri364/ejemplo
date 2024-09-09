@@ -8,18 +8,9 @@ function App(props) {
         <div class="titulo">
             <h1>{props.titulo}</h1>
         </div>
-        <nav>
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-        </ul>
-        </nav>
-
-        <div class="boton1"><p><a class="a" href="index.html">Iniciar sesion</a></p></div>
-        <div class="boton2"><p><a class="a" href="registro.html">Registrarse</a></p></div>
+    
+        <p><a  class="boton1"  href="index.html">Iniciar sesion</a></p>
+        <p><a class="boton2"  href="registro.html">Registrarse</a></p>
         </div>
     </header>
         <main>
