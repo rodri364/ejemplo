@@ -1,13 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Registro from './Registro';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App></App>,
+  },
+  {
+    path: "/registro",
+    element: <Registro />,
+    errorElement: <h1>error</h1>,
+    children: [
+      {
+        path: "persona",
+        element: <p>aa</p>
+      },
+      ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App titulo="Mi aplicacion de react" />
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );
 

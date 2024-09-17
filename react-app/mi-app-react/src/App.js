@@ -1,4 +1,5 @@
 import './App.css';
+import { Form, useLoaderData } from "react-router-dom";
 
 function App(props) {
   return (
@@ -6,11 +7,11 @@ function App(props) {
     <header>
         <div class="header-container">
         <div class="titulo">
-            <h1>{props.titulo}</h1>
+            <h1>Nombre titulo</h1>
         </div>
     
         <p><a  class="boton1"  href="index.html">Iniciar sesion</a></p>
-        <p><a class="boton2"  href="registro.html">Registrarse</a></p>
+        <p><a class="boton2"  href="/registro">Registrarse</a></p>
         </div>
     </header>
         <main>
@@ -22,7 +23,7 @@ function App(props) {
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" alt="Contraseña" placeholder="Ingrese su contraseña" required />
                     <button type="submit">Ingresar</button>
-                    <h5>Si no tiene una cuenta ingrese <a href="registro.html">aqui</a></h5>
+                    <h5>Si no tiene una cuenta ingrese <a href="/registro">aqui</a></h5>
                 </form>
             </div>
         </main>
