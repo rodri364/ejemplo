@@ -5,14 +5,14 @@ function App(props) {
   return (
     <>
     <header>
-        <div class="header-container">
         <div class="titulo">
             <h1>Nombre titulo</h1>
         </div>
     
-        <p><a  class="boton1"  href="index.html">Iniciar sesion</a></p>
-        <p><a class="boton2"  href="/registro">Registrarse</a></p>
-        </div>
+        <ul class="lista">
+            <li><a  class="boton1"  href="/app">Iniciar sesion</a></li>
+            <li><a class="boton2"  href="/registro">Registrarse</a></li>
+        </ul>
     </header>
         <main>
             <div class="login-container">

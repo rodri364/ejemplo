@@ -5,12 +5,9 @@ function Registro(params) {
     return(
     <>
     <header>
-        <div class="header-container">
             <div class="titulo">
                 <h1>Nombre titulo</h1>
-            </div>
-        </div>
-        
+            </div>        
     </header>
     <main>
     <div class="login-container">
