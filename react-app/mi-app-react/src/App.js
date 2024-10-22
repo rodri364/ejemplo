@@ -1,7 +1,16 @@
+import { useState } from 'react';
 import './App.css';
-import { Form, useLoaderData } from "react-router-dom";
+import { Form, Navigate, useLoaderData } from "react-router-dom";
 
 function App(props) {
+    const [usuario, setUsuario] = useState(null);
+    function handleSubmit(event) {
+        event.preventDefault();
+        if (true) {
+            setUsuario(true);
+        }
+        
+    }
   return (
     <>
     <header>
@@ -15,8 +24,9 @@ function App(props) {
         </ul>
     </header>
         <main>
+            {usuario && <Navigate to="/canvas" replace={true} />}
             <div class="login-container">
-                <form class="login-form">
+                <form class="login-form" onSubmit={handleSubmit}>
                     <h2>Iniciar sesion</h2>
                     <label for="username">Nombre de usuario</label>
                     <input type="username" id="username" name="username" alt="Nombre de usuario" placeholder="Ingrese su nombre de usuario" required />

@@ -8,11 +8,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Registro from './Registro';
+import Canvas from './Canvas';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+  },
+  {
+    path: "/canvas",
+    element: <Canvas></Canvas>
   },
   {
     path: "/registro",
