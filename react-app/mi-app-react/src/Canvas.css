@@ -147,6 +147,29 @@ body{
     margin-top: 20px;
 }
 
+
+/*canvas*/
+.canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+}
+
+.cuadros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
 /*footer*/
 footer {
     background-color: black;
@@ -223,7 +246,8 @@ footer form input {
     box-sizing: border-box;
 }
 
-footer form button {
+.sidebar button {
+    margin-top: 430px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -233,7 +257,7 @@ footer form button {
     transition: background-color 0.3s;
 }
 
-footer form button:hover {
+.sidebar button:hover {
     background-color: #004999;
 }
 
