@@ -11,14 +11,14 @@ function Registro(params) {
     </header>
     <main>
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" action='http://localhost:9000/usuarios' method='POST' target='_blank' >
             <h2>Registrarse</h2>
             <label for="username">Nombre de usuario</label>
             <input type="username" id="username" name="username" alt="Nombre de usuario" placeholder="Crear usuario" required />
             <label for="email">Correo electronico</label>
             <input type="email" id="email" name="email" alt="Correo electronico" placeholder="Ingrese un correo electronico" required />
             <label for="email">Verificar correo electronico</label>
-            <input type="email" id="email" name="email" alt="Correo electronico" placeholder="Ingrese su correo electronico" required />
+            <input type="email" id="email" alt="Correo electronico" placeholder="Ingrese su correo electronico" required />
             <label for="password">Contraseña</label>
             <input type="password" id="password" name="password" alt="Contraseña" placeholder="Ingrese una contraseña" required />
             <button type="submit">Ingresar</button>

@@ -1,4 +1,5 @@
-/*import express from "express";
+import express from "express";
+import { urlencoded } from "express";
 import mysql2 from "mysql2";
 
 // Get the client
@@ -15,11 +16,10 @@ const puerto = 9000;
 var app = express();
 
 app.use(express.json());
-
-
+app.use(urlencoded());
 try {
     const [results, fields] = await connection.query(
-      'SELECT * FROM `usuario` WHERE `name` = "Page" AND `age` > 45'
+      'SELECT * FROM `usuario` WHERE `nombre_usuario` = "Page"'
     );
   
     console.log(results); // results contains rows returned by server
@@ -29,7 +29,7 @@ try {
 }
 
 // Using placeholders
-try {
+/*try {
     const [results] = await connection.query(
       'SELECT * FROM `table` WHERE `name` = ? AND `age` > ?',
       ['Page', 45]
@@ -38,7 +38,7 @@ try {
     console.log(results);
 } catch (err) {
     console.log(err);
-}
+}*/
 
 
 app.get("/canvas", function (req, res) {
@@ -51,10 +51,7 @@ app.get("/canvas", function (req, res) {
 app.post("/usuarios", function (req, res) {
     // buscar estos valores
     
-    
-    req.body.nombreUsuario;
-    req.body.email;
-    req.body.contrasena;
+  console.log(req.body);
 
     //falta valor
     res.status(400);
@@ -69,4 +66,4 @@ app.post("/usuarios", function (req, res) {
 
 app.listen(puerto, function () {
   console.log(`Aplicación ejemplo, escuchando el puerto ${puerto}!`);
-});*/
+});
