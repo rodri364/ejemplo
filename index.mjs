@@ -1,4 +1,4 @@
-import express from "express";
+/*import express from "express";
 import mysql2 from "mysql2";
 
 // Get the client
@@ -69,4 +69,4 @@ app.post("/usuarios", function (req, res) {
 
 app.listen(puerto, function () {
   console.log(`Aplicación ejemplo, escuchando el puerto ${puerto}!`);
-});
+});*/
